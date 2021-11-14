@@ -58,6 +58,7 @@ export default class Text extends Plugin {
     textarea.style.padding = textNode.padding() + 'px'
     textarea.style.margin = '0px'
     textarea.style.fontSize = textNode.fontSize() + 'px'
+    textarea.style.fontWeight = 'bold'
     textarea.style.color = textNode.fill()
     textarea.style.fontFamily = textNode.fontFamily()
     textarea.style.border = 'none'
@@ -183,6 +184,7 @@ export default class Text extends Plugin {
       x: startPos.x,
       y: startPos.y - 10, // fix konvajs incorrect position of text
       fontSize,
+      fontStyle: 'bold',
       fill: color,
       padding: 3,
       lineHeight: 1.1,
