@@ -22,7 +22,7 @@ yarn add @cloudogu/react-img-editor
 
 ```jsx
 import ReactImgEditor from '@cloudogu/react-img-editor'
-import '@cloudogu/react-img-editor/index.css'
+import '@cloudogu/react-img-editor/lib/index.css'
 
 <ReactImgEditor src="https://www.w3schools.com/html/img_girl.jpg" />
 ```
