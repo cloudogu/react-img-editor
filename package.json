@@ -1,7 +1,7 @@
 {
-  "name": "react-img-editor",
-  "version": "0.2.1",
-  "description": "图片编辑器（微信截图编辑 PRO 版）",
+  "name": "@cloudogu/react-img-editor",
+  "version": "0.3.0",
+  "description": "Simple react image editor",
   "keywords": [
     "react-img-editor",
     "image-editor"
@@ -19,14 +19,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YaoKaiLun/react-img-editor.git"
+    "url": "git+https://github.com/cloudogu/react-img-editor.git"
   },
-  "author": "kailunyao",
+  "author": "Sebastian Sdorra <s.sdorra@cloudogu.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/YaoKaiLun/react-img-editor/issues"
+    "url": "https://github.com/cloudogu/react-img-editor/issues"
   },
-  "homepage": "https://github.com/YaoKaiLun/react-img-editor#readme",
+  "homepage": "https://github.com/cloudogu/react-img-editor#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
