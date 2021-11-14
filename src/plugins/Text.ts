@@ -72,7 +72,7 @@ export default class Text extends Plugin {
     textarea.addEventListener('keyup', (e: any) => {
       textNode.text(e.target.value)
       drawLayer.draw()
-      textarea.style.width = (textNode.width() + 25) + 'px'
+      textarea.style.width = textNode.width() + 'px'
       textarea.style.height = textNode.height() + 'px'
     })
 
