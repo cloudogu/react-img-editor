@@ -1,12 +1,12 @@
-import React from "react";
-import ReactImgEditor from "./index";
+import React from 'react'
+import ReactImgEditor from './index'
 
 export default {
-  title: "ReactImgEditor",
-};
+  title: 'ReactImgEditor',
+}
 
 const image1 =
-  "https://cstore-public.seewo.com/faq-service/4e3f2924f1d4432f82e760468bf680f0";
+  'https://cstore-public.seewo.com/faq-service/4e3f2924f1d4432f82e760468bf680f0'
 
 export const Simple = () => (
   <ReactImgEditor
@@ -17,16 +17,16 @@ export const Simple = () => (
     defaultPluginName="text"
     crossOrigin="anonymous"
   />
-);
+)
 
 export const MulitpleInstances = () => {
   const image1 =
-    "https://cstore-public.seewo.com/faq-service/4e3f2924f1d4432f82e760468bf680f0";
+    'https://cstore-public.seewo.com/faq-service/4e3f2924f1d4432f82e760468bf680f0'
   const image2 =
-    "https://cvte-dev-public.seewo.com/faq-service-test/4db524ec93324794b983bf7cd78b2ae1";
+    'https://cvte-dev-public.seewo.com/faq-service-test/4db524ec93324794b983bf7cd78b2ae1'
 
   return (
-    <div style={{ display: "flex" }}>
+    <div style={{ display: 'flex' }}>
       <ReactImgEditor
         src={image1}
         width={500}
@@ -35,7 +35,7 @@ export const MulitpleInstances = () => {
         defaultPluginName="text"
         crossOrigin="anonymous"
       />
-      <div style={{ width: "10px" }}></div>
+      <div style={{ width: '10px' }}></div>
       <ReactImgEditor
         src={image2}
         width={500}
@@ -45,5 +45,5 @@ export const MulitpleInstances = () => {
         crossOrigin="anonymous"
       />
     </div>
-  );
-};
+  )
+}
