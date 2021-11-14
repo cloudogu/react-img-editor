@@ -9,7 +9,7 @@ export default class Eraser extends Plugin {
   title = 'Erase'
   params = ['strokeWidth'] as PluginParamName[]
   defaultParamValue = {
-    strokeWidth: 2,
+    strokeWidth: 6,
   } as PluginParamValue
 
   lastLine: any = null

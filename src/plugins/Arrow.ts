@@ -10,7 +10,7 @@ export default class Arrow extends Plugin {
   title = 'Insert arrow'
   params = ['strokeWidth', 'color'] as PluginParamName[]
   defaultParamValue = {
-    strokeWidth: 2,
+    strokeWidth: 6,
     lineType: 'solid',
     color: '#F5222D',
   } as PluginParamValue

@@ -11,7 +11,7 @@ export default class Text extends Plugin {
   title = 'Insert text'
   params = ['fontSize', 'color'] as PluginParamName[]
   defaultParamValue = {
-    fontSize: 12,
+    fontSize: 24,
     color: '#F5222D',
   } as PluginParamValue
   shapeName = 'text'

@@ -10,7 +10,7 @@ export default class Circle extends Plugin {
   title = 'Insert circle'
   params = ['strokeWidth', 'lineType', 'color'] as PluginParamName[]
   defaultParamValue = {
-    strokeWidth: 2,
+    strokeWidth: 6,
     lineType: 'solid',
     color: '#F5222D',
   } as PluginParamValue

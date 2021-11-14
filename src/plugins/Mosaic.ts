@@ -13,7 +13,7 @@ export default class Mosaic extends Plugin {
   title = 'Mosaic'
   params = ['strokeWidth'] as PluginParamName[]
   defaultParamValue = {
-    strokeWidth: 2,
+    strokeWidth: 6,
   } as PluginParamValue
 
   isPaint = false
