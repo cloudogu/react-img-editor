@@ -12,15 +12,15 @@ export default function FontSizeSetting(props: FontSizeSettingProps) {
       <button
         className={`${prefixCls}-font-size ${props.value === 12 ? prefixCls + '-font-size-activated' : ''}`}
         onClick={() => props.onChange(12)}
-      >小</button>
+      >S</button>
       <button
         className={`${prefixCls}-font-size ${props.value === 16 ? prefixCls + '-font-size-activated' : ''}`}
         onClick={() => props.onChange(16)}
-      >中</button>
+      >M</button>
       <button
         className={`${prefixCls}-font-size ${props.value === 20 ? prefixCls + '-font-size-activated' : ''}`}
         onClick={() => props.onChange(20)}
-      >大</button>
+      >L</button>
     </span>
   )
 }

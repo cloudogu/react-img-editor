@@ -7,7 +7,7 @@ import { uuid } from '../common/utils'
 export default class Arrow extends Plugin {
   name = 'arrow'
   iconfont = 'iconfont icon-arrow'
-  title = '插入箭头'
+  title = 'Insert arrow'
   params = ['strokeWidth', 'color'] as PluginParamName[]
   defaultParamValue = {
     strokeWidth: 2,

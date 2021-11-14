@@ -10,7 +10,7 @@ const toolbarHeight = 40
 export default class Crop extends Plugin {
   name = 'crop'
   iconfont = 'iconfont icon-cut'
-  title = '图片裁剪'
+  title = 'Image cropping'
   params = []
 
   isPaint = false

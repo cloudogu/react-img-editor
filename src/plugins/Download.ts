@@ -5,7 +5,7 @@ import Plugin from './Plugin'
 export default class Download extends Plugin {
   name = 'download'
   iconfont = 'iconfont icon-download'
-  title = '下载图片'
+  title = 'Download image'
 
   onEnter = (drawEventParams: DrawEventParams) => {
     const {stage, pixelRatio} = drawEventParams
