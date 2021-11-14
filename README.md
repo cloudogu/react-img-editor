@@ -4,6 +4,8 @@ react-img-editor is an image editor react component that supports image cropping
 
 ![example](assets/demo.png)
 
+View our [storybook](https://cloudogu.github.io/react-img-editor) for a live demo.
+
 ## ✨ Features
 
 - Support free brush, rectangle, circle, arrow, text, mosaic drawing
