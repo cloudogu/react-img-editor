@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 import Toolbar from './components/Toolbar'
 import { PluginParamValue } from './common/type'
 import { EditorContext } from './components/EditorContext'
+import "./styles/index.less";
 
 interface ReactImageEditorProps {
   width?: number;
