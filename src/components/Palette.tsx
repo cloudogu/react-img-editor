@@ -278,6 +278,7 @@ class Palette extends React.Component<PaletteProps> {
       handlePluginParamValueChange: props.handlePluginParamValueChange,
       toolbarItemConfig: props.toolbarItemConfig,
       updateToolbarItemConfig: props.updateToolbarItemConfig,
+      language: props.language,
     }
 
     return drawEventParams
