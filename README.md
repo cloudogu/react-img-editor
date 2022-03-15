@@ -38,7 +38,7 @@ import "@cloudogu/react-img-editor/lib/index.css";
 | height     | board height   | number?              | 500 |
 | style      | styles         | React.CSSProperties  | -  |
 | plugins    | Custom plugins | Plugin[]             | [] |
-| toolbar           | toolbar configuration                                                                                                   | { items: string[] }  | {items: ['pen', 'eraser', 'arrow', 'rect', 'circle', 'mosaic', 'text', ' | ', 'repeat', 'download', 'crop']} |
+| toolbar           | toolbar configuration                                                                                                   | { items: string[] }  | {items: ['pen', 'eraser', 'arrow', 'rect', 'circle', 'mosaic', 'text', ' / ', 'repeat', 'download', 'crop']} |
 | getStage          | Get the [Stage](https://konvajs.org/api/Konva.Stage.html) object of KonvaJS, which can be used to download images, etc. | (stage: any) => void |
 | defaultPluginName | The default selected plugin name                                                                                        | string?              | -                                                                        |
 | crossOrigin       | Handling cross-domain images                                                                                            | string?              | -                                                                        |
