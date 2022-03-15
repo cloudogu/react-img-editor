@@ -26,23 +26,23 @@ yarn add @cloudogu/react-img-editor
 import ReactImgEditor from '@cloudogu/react-img-editor'
 import '@cloudogu/react-img-editor/lib/index.css'
 
-<ReactImgEditor src="https://www.w3schools.com/html/img_girl.jpg" />
+;<ReactImgEditor src="https://www.w3schools.com/html/img_girl.jpg" />
 ```
 
 ## 🧰 API
 
-| Properties | Description | Type | Default |
-| --- | --- | --- | --- |
-| src | image url | string | - |
-| width | board width | number?
-| height | height | height | number?
-| style | styles | React.CSSProperties | - |
-| plugins | Custom plugins | Plugin[] | [] |
-| toolbar | toolbar configuration | { items: string[] } | {items: ['pen', 'eraser', 'arrow', 'rect', 'circle', 'mosaic', 'text', '|', 'repeat', 'download', 'crop']} |
-| getStage | Get the [Stage](https://konvajs.org/api/Konva.Stage.html) object of KonvaJS, which can be used to download images, etc. | (stage: any) => void |
-| defaultPluginName | The default selected plugin name | string?
-| crossOrigin | Handling cross-domain images | string?
-
+| Properties        | Description                                                                                                             | Type                 | Default                                                                  |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------- | ------------------------------------------------------------------------ | --------------------------------- |
+| src               | image url                                                                                                               | string               | -                                                                        |
+| width             | board width                                                                                                             | number?              | 700                                                                      |
+| height            | board height                                                                                                            | number?              | 500                                                                      |
+| style             | styles                                                                                                                  | React.CSSProperties  | -                                                                        |
+| plugins           | Custom plugins                                                                                                          | Plugin[]             | []                                                                       |
+| toolbar           | toolbar configuration                                                                                                   | { items: string[] }  | {items: ['pen', 'eraser', 'arrow', 'rect', 'circle', 'mosaic', 'text', ' | ', 'repeat', 'download', 'crop']} |
+| getStage          | Get the [Stage](https://konvajs.org/api/Konva.Stage.html) object of KonvaJS, which can be used to download images, etc. | (stage: any) => void |
+| defaultPluginName | The default selected plugin name                                                                                        | string?              | -                                                                        |
+| crossOrigin       | Handling cross-domain images                                                                                            | string?              | -                                                                        |
+| language          | Editor language (de,en)                                                                                                 | string?              | en                                                                       |
 
 ## 📝 TODO
 
@@ -50,7 +50,7 @@ import '@cloudogu/react-img-editor/lib/index.css'
 - [ ] Download image type configuration
 - [ ] Provide plugin configuration items configuration
 - [ ] Optimize free brush writing experience
-- [ ] Internationalization support
+- [x] Internationalization support
 
 ## 🤝 Contribute
 
