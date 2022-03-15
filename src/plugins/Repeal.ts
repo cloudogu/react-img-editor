@@ -5,7 +5,7 @@ import { DrawEventParams } from '../common/type'
 export default class Repeal extends Plugin {
   name = 'repeal'
   iconfont = 'iconfont icon-repeal'
-  title = 'Revoke'
+  title = { en: 'Revoke', de: 'Rückgängig machen' }
 
   onEnter = (drawEventParams: DrawEventParams) => {
     const {drawLayer, historyStack, plugins, pubSub} = drawEventParams

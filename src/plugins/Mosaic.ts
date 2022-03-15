@@ -10,7 +10,7 @@ const tileWidth = 5
 export default class Mosaic extends Plugin {
   name = 'mosaic'
   iconfont = 'iconfont icon-mosaic'
-  title = 'Mosaic'
+  title = { en: 'Mosaic', de: 'Mosaik' }
   params = ['strokeWidth'] as PluginParamName[]
   defaultParamValue = {
     strokeWidth: 6,

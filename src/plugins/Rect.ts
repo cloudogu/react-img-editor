@@ -7,7 +7,7 @@ import { uuid } from '../common/utils'
 export default class Rect extends Plugin {
   name = 'rect'
   iconfont = 'iconfont icon-square'
-  title = 'Insert Rectangle'
+  title = { en: 'Insert Rectangle', de: 'Rechteck einfügen' }
   params = ['strokeWidth', 'lineType', 'color'] as PluginParamName[]
   defaultParamValue = {
     strokeWidth: 6,

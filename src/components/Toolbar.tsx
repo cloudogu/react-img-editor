@@ -16,6 +16,7 @@ export default function Toolbar() {
     handlePluginChange,
     handlePluginParamValueChange,
     toolbarItemConfig,
+    language,
   } = useContext(EditorContext)
 
   const style = { width: containerWidth }
@@ -24,6 +25,7 @@ export default function Toolbar() {
     const isActivated = !!(currentPlugin && currentPlugin.name === plugin.name)
     const paramNames = currentPlugin ? currentPlugin.params : []
     const isDisabled = toolbarItemConfig[plugin.name].disable
+    const title = plugin.title[language] || plugin.title['en']
 
     if (!paramNames || paramNames.length === 0) {
       return (
@@ -31,7 +33,7 @@ export default function Toolbar() {
           key={plugin.name}
           className={`${prefixCls}-toolbar-icon ${isActivated ? 'activated' : ''} ${isDisabled ? 'disabled' : ''}`}
         >
-          <i title={plugin.title} className={plugin.iconfont} onClick={() => handlePluginChange(plugin)} />
+          <i title={title} className={plugin.iconfont} onClick={() => handlePluginChange(plugin)} />
         </span>
       )
     }
@@ -49,13 +51,13 @@ export default function Toolbar() {
         )}
         visible={isActivated}
         overlayClassName={`${prefixCls}-tooltip`}
-        arrowContent={<div className="rc-tooltip-arrow-inner"></div>}
+        arrowContent={<div className="rc-tooltip-arrow-inner"/>}
       >
         <span
           key={plugin.name}
           className={`${prefixCls}-toolbar-icon ${isActivated ? 'activated' : ''} ${isDisabled ? 'disabled' : ''}`}
         >
-          <i title={plugin.title} className={plugin.iconfont} onClick={() => handlePluginChange(plugin)} />
+          <i title={title} className={plugin.iconfont} onClick={() => handlePluginChange(plugin)} />
         </span>
       </Tooltip>
     )

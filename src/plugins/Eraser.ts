@@ -6,7 +6,7 @@ import { uuid } from '../common/utils'
 export default class Eraser extends Plugin {
   name = 'eraser'
   iconfont = 'iconfont icon-eraser'
-  title = 'Erase'
+  title = { en: 'Erase', de: 'Radieren' }
   params = ['strokeWidth'] as PluginParamName[]
   defaultParamValue = {
     strokeWidth: 6,

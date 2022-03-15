@@ -3,7 +3,7 @@ import { DrawEventParams, PluginParamName, PluginParamValue } from '../common/ty
 export default abstract class Plugin {
   abstract name: string;
   abstract iconfont: string;
-  abstract title: string;
+  abstract title: { [lang: string]: string };
   params?: PluginParamName[];
   defaultParamValue?: PluginParamValue;
   shapeName?: string;

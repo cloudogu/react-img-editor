@@ -7,7 +7,7 @@ import { uuid } from '../common/utils'
 export default class Circle extends Plugin {
   name = 'circle'
   iconfont = 'iconfont icon-circle'
-  title = 'Insert circle'
+  title = { en: 'Insert circle', de: 'Kreis einfügen' }
   params = ['strokeWidth', 'lineType', 'color'] as PluginParamName[]
   defaultParamValue = {
     strokeWidth: 6,

@@ -19,6 +19,7 @@ interface ReactImageEditorProps {
   getStage?: (stage: any) => void;
   defaultPluginName?: string;
   crossOrigin?: string;
+  language?: string;
 }
 
 export default function ReactImageEditor(props: ReactImageEditorProps) {
@@ -104,6 +105,8 @@ export default function ReactImageEditor(props: ReactImageEditorProps) {
         handlePluginParamValueChange,
         toolbarItemConfig,
         updateToolbarItemConfig,
+        // Convert en-US to en
+        language: (props.language || 'en').substring(0,2),
       }}
     >
       <div className="react-img-editor" style={style}>

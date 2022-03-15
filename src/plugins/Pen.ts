@@ -6,7 +6,7 @@ import { uuid } from '../common/utils'
 export default class Pen extends Plugin {
   name = 'pen'
   iconfont = 'iconfont icon-pen'
-  title = 'Brushes'
+  title = { en: 'Brushes', de: 'Frei zeichnen' }
   params = ['strokeWidth', 'lineType', 'color'] as PluginParamName[]
   defaultParamValue = {
     strokeWidth: 6,

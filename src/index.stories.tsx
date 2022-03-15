@@ -19,6 +19,18 @@ export const Simple = () => (
   />
 )
 
+export const GermanTexts = () => (
+  <ReactImgEditor
+    src={image1}
+    width={736}
+    height={414}
+    plugins={[]}
+    defaultPluginName="text"
+    crossOrigin="anonymous"
+    language="de"
+  />
+)
+
 export const MulitpleInstances = () => {
   const image1 =
     'https://cstore-public.seewo.com/faq-service/4e3f2924f1d4432f82e760468bf680f0'
