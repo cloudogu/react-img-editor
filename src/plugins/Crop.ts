@@ -4,7 +4,7 @@ import { DrawEventParams } from '../common/type'
 import { transformerStyle } from '../common/constants'
 import { uuid } from '../common/utils'
 
-const toolbarWidth = 275
+const toolbarWidth = 300
 const toolbarHeight = 40
 
 export default class Crop extends Plugin {
@@ -18,6 +18,10 @@ export default class Crop extends Plugin {
   rect: any = null
   transformer: any = null
   toolbarId = 'react-img-editor-crop-toolbar' + uuid()
+  usage = {
+    en: 'Drag the border to adjust the scope of the image display',
+    de: 'Ziehen Sie den Rand um den Umfang des Ausschnitts anzupassen',
+  }
 
   // 一直为正数
   getRectWidth = () => {
@@ -76,12 +80,11 @@ export default class Crop extends Plugin {
     $cropToolbar.setAttribute('id', this.toolbarId)
     const cropToolbarStyle = 'position: absolute; z-index: 1000; box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);' +
       `background: #FFF; width: ${toolbarWidth}px; height: ${toolbarHeight}px; display: flex; align-items: center; padding: 0 12px;` +
-      'font-size: 14px;'
+      'font-size: 12px;'
     $cropToolbar.setAttribute('style', cropToolbarStyle)
     fragment.appendChild($cropToolbar)
 
-    // 创建文本
-    const $textNode = document.createTextNode('拖动边框调整图片显示范围')
+    const $textNode = document.createTextNode(this.usage[this.language] || this.usage['en'])
     $cropToolbar.appendChild($textNode)
 
     const btnStyle = 'display: inline-block; width: 32px; height: 24px; border: 1px solid #C9C9D0;' +

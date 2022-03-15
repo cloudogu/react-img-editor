@@ -4,6 +4,7 @@ export default abstract class Plugin {
   abstract name: string;
   abstract iconfont: string;
   abstract title: { [lang: string]: string };
+  language: string;
   params?: PluginParamName[];
   defaultParamValue?: PluginParamValue;
   shapeName?: string;

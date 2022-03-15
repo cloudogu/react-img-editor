@@ -24,24 +24,23 @@ interface ReactImageEditorProps {
 
 export default function ReactImageEditor(props: ReactImageEditorProps) {
   const [imageObj, setImageObj] = useState<HTMLImageElement | null>(null)
-
+  // Convert en-US to en
+  const language = (props.language || 'en').substring(0, 2)
 
   const pluginFactory = new PluginFactory()
   const plugins = [...pluginFactory.plugins, ...props.plugins!]
   let defaultPlugin = null
   let defaultParamValue = {}
-  for(let i = 0; i < plugins.length; i++) {
+  for (let i = 0; i < plugins.length; i++) {
+    plugins[i].language = language
     if (props.defaultPluginName && props.toolbar && plugins[i].name === props.defaultPluginName) {
       defaultPlugin = plugins[i]
 
       if (defaultPlugin.defaultParamValue) {
         defaultParamValue = defaultPlugin.defaultParamValue
       }
-
-      break
     }
   }
-
   const [currentPlugin, setCurrentPlugin] = useState<Plugin | null>(defaultPlugin)
   const [paramValue, setParamValue] = useState<PluginParamValue>(defaultParamValue)
 
@@ -105,8 +104,7 @@ export default function ReactImageEditor(props: ReactImageEditorProps) {
         handlePluginParamValueChange,
         toolbarItemConfig,
         updateToolbarItemConfig,
-        // Convert en-US to en
-        language: (props.language || 'en').substring(0,2),
+        language,
       }}
     >
       <div className="react-img-editor" style={style}>
